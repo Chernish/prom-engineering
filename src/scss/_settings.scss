@@ -4,7 +4,7 @@ html {
 
 *,
 *::before,
-*::after {
+*::before {
   box-sizing: inherit;
 }
 
@@ -102,7 +102,7 @@ input:focus, textarea:focus {
   margin-top: 49px;
   margin-bottom: 89px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: -19px;
@@ -113,6 +113,7 @@ input:focus, textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/section_drawing.png");
+    z-index: -1;
   }
 }
 
@@ -126,7 +127,7 @@ input:focus, textarea:focus {
   margin-top: 49px;
   margin-bottom: 83px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     right: -68px;
@@ -137,6 +138,7 @@ input:focus, textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/section_drawing--right.png");
+    z-index: -1;
   }
 }
 
@@ -150,7 +152,7 @@ input:focus, textarea:focus {
   margin-top: 32px;
   margin-bottom: 89px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: -70px;
@@ -161,6 +163,7 @@ input:focus, textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/section_drawing--white.png");
+    z-index: -1;
   }
 }
 
@@ -174,7 +177,7 @@ input:focus, textarea:focus {
   margin-top: 41px;
   margin-bottom: 83px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     right: -72px;
@@ -185,6 +188,7 @@ input:focus, textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../img/section_drawing--right.png");
+    z-index: -1;
   }
 }
 
@@ -199,17 +203,17 @@ ymaps {
 
 @media (max-width: 482px) {
   .section__title--right {
-    &::after {
+    &::before {
       right: -44px;
     }
   }
   .section__title--white {
-    &::after {
+    &::before {
       left: -40px;
     }
   }
   .section__title--feedback {
-    &::after {
+    &::before {
       right: -44px;
     }
   }
@@ -217,12 +221,12 @@ ymaps {
 
 @media (max-width: 425px) {
   .section__title--left {
-    &::after {
+    &::before {
       left: 8px;
     }
   }
   .section__title--feedback {
-    &::after {
+    &::before {
       right: -34px;
     }
   }
@@ -230,28 +234,28 @@ ymaps {
 @media (max-width: 375px) {
   .section__title--left {
     font-size: 40px;
-    &::after {
+    &::before {
       left: 22px;
     }
   }
 
   .section__title--right {
     font-size: 40px;
-    &::after {
+    &::before {
       right: -38px;
     }
   }
 
   .section__title--white {
     font-size: 40px;
-    &::after {
+    &::before {
       left: -35px;
     }
   }
 
   .section__title--feedback {
     font-size: 40px;
-    &::after {
+    &::before {
       right: -32px;
     }
   }
@@ -260,13 +264,13 @@ ymaps {
 @media (max-width: 320px) {
   .section__title--left {
     font-size: 35px;
-    &::after {
+    &::before {
       left: 43px;
     }
   }
   .section__title--right {
     font-size: 35px;
-    &::after {
+    &::before {
       right: -37px;
     }
   }
